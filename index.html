@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Robotics Club Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f7f7f9;
+            color: #333;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .btn-submit {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+        }
+        .form-control {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Join the Robotics Club!</h1>
+    <p>Become a part of our tech-savvy community and dive into the world of robotics!</p>
+
+    <form>
+        <h2>Personal Information</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="col-md-6">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" class="form-control" placeholder="Enter your age">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <div class="col-md-6">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your contact number">
+            </div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="topics">Topics of Interest</label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="topic1" value="Robotics Basics">
+                <label class="form-check-label" for="topic1">Robotics Basics</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="topic2" value="AI and Machine Learning">
+                <label class="form-check-label" for="topic2">AI and Machine Learning</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="topic3" value="Advanced Robotics">
+                <label class="form-check-label" for="topic3">Advanced Robotics</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="level">Level</label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="level" id="beginner" value="Beginner">
+                <label class="form-check-label" for="beginner">Beginner</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="level" id="intermediate" value="Intermediate">
+                <label class="form-check-label" for="intermediate">Intermediate</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="level" id="advanced" value="Advanced">
+                <label class="form-check-label" for="advanced">Advanced</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="project">Projects</label>
+            <select class="form-select" id="project" name="project">
+                <option selected>Select a project</option>
+                <option value="Autonomous Vehicle">Autonomous Vehicle</option>
+                <option value="Robot Arm">Robot Arm</option>
+                <option value="Drone Development">Drone Development</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="reason">Reason for Joining</label>
+            <textarea class="form-control" id="reason" name="reason" rows="3" placeholder="Why do you want to join?"></textarea>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <button type="submit" class="btn-submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
